@@ -753,14 +753,13 @@ nav {
 }
 
 
-/*  */
 #gallery-section {
   text-align: center;
   padding: 30px 15px;
 }
 
 #gallery-section h2 {
-  font-size: 90px;
+  font-size: 8vw; /* Responsive heading */
   font-weight: 500;
   width: 100%;
   max-width: 800px;
@@ -769,26 +768,28 @@ nav {
 }
 
 #gallery-section p {
-  font-size: 27px;
+  font-size: 1.5rem; /* Scales better than fixed px */
   font-weight: 500;
   width: 100%;
   max-width: 800px;
   margin: 10px auto;
   font-family: "Montserrat", sans-serif;
   color: #928e8e;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .main-display {
   position: relative;
-  max-width: 1600px;
+  max-width: 100%;
   width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 .main-display img {
   width: 100%;
-  max-height: 1000px;
+  height: auto;
+  max-height: 80vh;
   object-fit: contain;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -803,9 +804,10 @@ nav {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 2.5rem;
   user-select: none;
   transition: background 0.3s ease;
+  z-index: 10;
 }
 
 .nav-icon:hover {
@@ -813,15 +815,13 @@ nav {
 }
 
 .nav-icon.left {
-  left: -10px;
-  font-size: 60px;
+  left: 10px;
   background: none;
   color: rgb(0, 0, 0);
 }
 
 .nav-icon.right {
-  right: 0px;
-  font-size: 60px;
+  right: 10px;
   background: none;
   color: rgb(0, 0, 0);
 }
@@ -829,6 +829,48 @@ nav {
 .gallery {
   display: none;
 }
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  #gallery-section h2 {
+    font-size: 10vw;
+  }
+
+  #gallery-section p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .nav-icon {
+    font-size: 2rem;
+    padding: 8px;
+  }
+
+  .main-display img {
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #gallery-section h2 {
+    font-size: 12vw;
+  }
+
+  #gallery-section p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .nav-icon {
+    font-size: 1.8rem;
+    padding: 6px;
+  }
+
+  .main-display img {
+    max-height: 50vh;
+  }
+}
+
 /*  */
 
 #blogs {
@@ -922,13 +964,15 @@ nav {
   color: rgb(155, 152, 152);
   line-height: 2.5rem;
 }
-
+.about-details button{
+  margin-top: 6rem;
+}
 /* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
 
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
   #blogs .headings h1 {
-    font-size: 70px;
+    font-size: 65px;
   }
 
   #blogs .headings p {
@@ -936,13 +980,17 @@ nav {
   }
 
   .blog-items .items h3 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .items p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 2rem;
   }
+  .about-details button{
+  font-size: 1rem;
+  width: 80%;
+}
 }
 
 /* Small tablets / large phones */
@@ -953,7 +1001,7 @@ nav {
   }
 
   #blogs .headings h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   #blogs .headings p {
@@ -973,12 +1021,16 @@ nav {
     font-size: 18px;
     line-height: 1.8rem;
   }
+    .about-details button{
+  font-size: 0.2rem;
+  width: 50%;
+}
 }
 
 /* Phones */
 @media (max-width: 480px) {
   #blogs .headings h1 {
-    font-size: 38px;
+    font-size: 35px;
   }
 
   #blogs .headings p {
@@ -1001,6 +1053,10 @@ nav {
   .items {
     margin: 10px;
   }
+  .about-details button{
+  font-size: 0.5rem;
+  width: 80%;
+}
 }
 
 

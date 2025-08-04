@@ -1083,9 +1083,9 @@ nav {
 }
 
 .blog-items .items h3 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 300;
-  margin: 15px;
+  margin: 20px;
   font-family: "Abril Fatface", serif;
   transition: color 0.2s ease;
 }
@@ -1098,7 +1098,7 @@ nav {
 .items h4 {
   margin: 30px 15px 0;
   color: rgb(155, 152, 152);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
@@ -1106,11 +1106,11 @@ nav {
 .blog-items .items p {
   width: 90%;
   margin: 20px 15px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
   color: rgb(155, 152, 152);
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 /* -------------------- RESPONSIVE MEDIA QUERIES -------------------- */
@@ -1118,7 +1118,8 @@ nav {
 /* Medium devices (tablets) */
 @media (max-width: 1024px) {
   #blogs .headings h1 {
-    font-size: 70px;
+    font-size: 65px;
+
   }
 
   #blogs .headings p {
@@ -1130,8 +1131,8 @@ nav {
   }
 
   .items p {
-    font-size: 20px;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 1.8rem;
   }
 }
 
@@ -1160,8 +1161,8 @@ nav {
   }
 
   .items p {
-    font-size: 18px;
-    line-height: 1.8rem;
+    font-size: 14px;
+    line-height: 1.5rem;
   }
 }
 
@@ -1184,8 +1185,8 @@ nav {
   }
 
   .items p {
-    font-size: 16px;
-    line-height: 1.6rem;
+    font-size: 12px;
+    line-height: 1.2rem;
   }
 
   .items {
@@ -1229,7 +1230,7 @@ nav {
 
 .user {
   width: 50%;
-  min-height: 300px;
+  min-height: 200px;
   padding: 20px;
 }
 
@@ -1242,7 +1243,7 @@ nav {
   font-size: 25px;
   font-weight: 300;
   color: #000000;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 #news .user p i i {
