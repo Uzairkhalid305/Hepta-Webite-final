@@ -608,6 +608,27 @@ button:hover {
     max-width: 100%;
   }
 }
+/* 📱 Very Small Screens (Phones under 480px) */
+@media (max-width: 480px) {
+  .dtls {
+    grid-template-columns: 1fr; /* force single column */
+    padding: 20px 15px;
+    text-align: center; /* center for readability */
+  }
+
+  .dtls h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .dtls p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+}
+
+
 
 /* .. */
 /*  */

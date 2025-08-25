@@ -680,7 +680,17 @@ nav {
   height: 90vh;
   object-fit: cover;
 }
+#openVideoBtn{
+  font-size: 1rem;
+  font-weight: 500;
+  border: 3px solid #0e93aa;
+  color: #0e93aa;
+  padding: 20px 10px;
+  cursor: pointer;
+  background: none;
+  width: 50%;
 
+}
 /* Text section styling */
 .about-details {
   flex: 1 1 45%;
@@ -705,15 +715,16 @@ nav {
   margin-bottom: 20px;
 }
 
-.about-details button {
+/* .about-details button {
   border: 3px solid #0e93aa;
   width: 50%;
+  
   margin-top: 20px;
   background: none;
   border-radius: 5px;
   padding: 20px 10px;
   cursor: pointer;
-}
+} */
 
 .about-details button h2 {
   font-size: 24px;
@@ -751,6 +762,52 @@ nav {
     font-size: 16px;
   }
 }
+/* 📱 Very small screens (phones < 480px) */
+@media (max-width: 480px) {
+  .about-row {
+    flex-direction: column;   /* stack */
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .about-row .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .about-row .about-details h1 {
+    font-size: 28px; /* smaller heading */
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .about-row .about-details p {
+    font-size: 13px;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .about-row .about-details button {
+    width: 100%;         /* full width */
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .about-row .about-details button h2 {
+    font-size: 10px;
+  }
+  #openVideoBtn{
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 3px solid #0e93aa;
+  color: #0e93aa;
+  padding: 12px 10px;
+  width: 100%;
+  cursor: pointer;
+  }
+}
+
 
 
 #gallery-section {
@@ -759,7 +816,7 @@ nav {
 }
 
 #gallery-section h2 {
-  font-size: 8vw; /* Responsive heading */
+  font-size: 6vw; /* Responsive heading */
   font-weight: 500;
   width: 100%;
   max-width: 800px;
